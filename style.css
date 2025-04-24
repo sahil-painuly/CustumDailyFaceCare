@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f8f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    color: #2e8b57;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .task-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #e0f5eb;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #logContainer {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .sunscreen-section {
+    margin-top: 20px;
+    text-align: center;
+    background: #f0fcf7;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .sunscreen-counter button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
+
+  
+  .task-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .task-input button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-input button:hover {
+    background-color: #218838;
+  }
+  
+  button[onclick="saveTasks()"] {
+    display: block;
+    margin: 25px auto;
+    padding: 14px 30px;
+    font-size: 17px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[onclick="saveTasks()"]:hover {
+    background-color: #0056b3;
+  }
+  

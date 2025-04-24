@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Task Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🌞 Daily Task Tracker</h1>
+      <h3 id="today-date"></h3>
+
+      <ul id="taskList"></ul>
+
+      <div class="sunscreen-section">
+        <h3>🧴 Sunscreen Log</h3>
+        <div class="sunscreen-counter">
+          <button onclick="changeSunscreen(-1)">➖</button>
+          <span id="sunscreenCount">0</span> times applied today
+          <button onclick="changeSunscreen(1)">➕</button>
+        </div>
+      </div>
+
+      <div class="task-input">
+        <button onclick="promptNewTask()">➕ Add Task</button>
+      </div>
+      
+
+      <button onclick="saveTasks()">✅ Save Today's Progress</button>
+
+      <hr />
+      <hr />
+      <h2>📆 View Previous Task Log</h2>
+      <input type="date" id="logDateInput" />
+      <button onclick="viewLogForDate()">View Log</button>
+      <div
+        id="logDetails"
+        style="
+          margin-top: 10px;
+          background: #f2f2f2;
+          padding: 10px;
+          border-radius: 8px;
+        "
+      ></div>
+
+      <div id="logContainer"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
